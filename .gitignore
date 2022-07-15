@@ -128,5 +128,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Project-based .txt files
-*.txt
+# Project-related .txt files
+previous-address.txt
+blacklist.text
