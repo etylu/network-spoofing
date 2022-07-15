@@ -17,7 +17,7 @@ The above commands may vary per your preferred aliases. But essentially, you wil
 Within the terminal run the following command to activate the service:
 
 ```
-$ python3 switch.py {the name of your interface} -r
+$ python3 core.py {the name of your interface} -r
 ```
 
 The `-r` indicates that a randomized MAC address is desired.
