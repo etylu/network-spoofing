@@ -17,6 +17,7 @@ The above commands may vary per your preferred aliases. But essentially, you wil
 Within the terminal run the following command to activate the service:
 
 ```
+$ cd {directory location}/network-spoofing
 $ python3 spoof.py {the name of your interface} -r
 ```
 
