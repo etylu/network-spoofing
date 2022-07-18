@@ -83,28 +83,27 @@ if(__name__ == '__main__'):
   args = parser.parse_args(sys.argv)
   iface = args.interface
 
-  if(args.random):
-    connect = _mask()
-    prev = _get(iface)
-    _change(iface, connect)
+  connect = _mask()
+  prev = _get(iface)
+  _change(iface, connect)
 
-    while(True):
-      try:
-        urllib.urlopen('https://google.com')
-      except:
-        f = open('blacklist.txt', 'a')
+  while(True):
+    try:
+      urllib.urlopen('https://google.com')
+    except:
+      f = open('blacklist.txt', 'a')
 
-        if(not _access):
-          f.write(connect)
-          _access = not _access
-        else:
-          f.write('\n' + connect)
-        
-        f.close()
-        _update()
-        connect = _mask()
+      if(not _access):
+        f.write(connect)
+        _access = not _access
       else:
-        break
+        f.write('\n' + connect)
+
+      f.close()
+      _update()
+      connect = _mask()
+    else:
+      break
 
     print(f'[-] Previous MAC address: {prev}')
     print(f'[+] Current MAC address: {connect}')
