@@ -1,4 +1,4 @@
-# Spoof Media Control Access (MAC) Address
+# Spoof Your Media Control Access (MAC) Address
 This directory enables the user to disguise their device's MAC address. To successfully utilize this service, Python3 must be installed within the Linux OS. To check which version of Python has come preinstalled with the OS run the following command (upgrade as you see fit):
 
 ```
